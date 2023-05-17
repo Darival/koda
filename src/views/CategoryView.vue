@@ -13,7 +13,11 @@ console.log(category)
   <div class="container">
     <p class="fs-3 fw-bold my-5">{{ category.text }}</p>
     <div class="d-flex justify-content-center flex-wrap">
-      <div v-for="(item, index) in category.inventario" :key="route.params.category + '-' + index" class="m-2">
+      <div
+        v-for="(item, index) in category.inventario"
+        :key="route.params.category + '-' + index"
+        class="m-2"
+      >
         <div class="koda-item-image" :style="{ backgroundImage: 'url(' + item.image + ')' }"></div>
         <h2 class="text-center koda-item-name">{{ item.name }}</h2>
         <ul>
@@ -30,7 +34,6 @@ console.log(category)
 </template>
 
 <style scoped>
-
 .koda-item-name {
   font-size: 3rem;
   font-weight: bold;

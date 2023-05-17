@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <footer class="p-4 text-center fs-4 fst-italic mt-5">
@@ -7,9 +6,8 @@
   </footer>
 </template>
 
-
 <style scoped>
- footer {
+footer {
   background-color: #1bcc30;
- }
+}
 </style>

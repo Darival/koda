@@ -1,7 +1,7 @@
-import fl20 from '../assets/categorias/gasLp/FL20.png';
-import fl25 from '../assets/categorias/gasLp/FL25.jpg';
-import fl30 from '../assets/categorias/gasLp/FL30.png';
-import fl35 from '../assets/categorias/gasLp/FL35.png';
+import fl20 from '../assets/categorias/gasLp/FL20.png'
+import fl25 from '../assets/categorias/gasLp/FL25.jpg'
+import fl30 from '../assets/categorias/gasLp/FL30.png'
+import fl35 from '../assets/categorias/gasLp/FL35.png'
 
 export default {
   id: 'montacargas-combustion-gas-lpg',
@@ -15,7 +15,7 @@ export default {
         'Peso operativo: 3,350 kg',
         'Energía: Gas LPG',
         'Centro de carga: 500 mm',
-        'Motor: Mitsubishi S4S',
+        'Motor: Mitsubishi S4S'
       ]
     },
     {
@@ -25,7 +25,7 @@ export default {
         'Peso operativo: 3,800 kg ',
         'Energía: Gas LPG',
         'Centro de carga: 500 mm',
-        'Motor: Mitsubishi S4S',
+        'Motor: Mitsubishi S4S'
       ]
     },
     {
@@ -35,7 +35,7 @@ export default {
         'Peso operativo: 4,350 kg',
         'Energía: Gas LPG',
         'Centro de carga: 500 mm',
-        'Motor: Mitsubishi S4S',
+        'Motor: Mitsubishi S4S'
       ]
     },
     {
@@ -45,8 +45,8 @@ export default {
         'Peso operativo: 4,850 kg',
         'Energía: Gas LPG',
         'Centro de carga: 500 mm',
-        'Motor: Mitsubishi S4S',
+        'Motor: Mitsubishi S4S'
       ]
-    },
+    }
   ]
 }

@@ -1,5 +1,5 @@
 <script setup>
-import hero from '../assets/hero.jpg';
+import hero from '../assets/hero.jpg'
 
 defineProps({
   title: {
@@ -26,7 +26,6 @@ defineProps({
     </div>
   </main>
 </template>
-
 
 <style scoped>
 .koda-hero {

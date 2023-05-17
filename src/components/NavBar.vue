@@ -1,17 +1,17 @@
 <script setup>
 import { RouterLink, useRouter } from 'vue-router'
-import { Collapse } from "bootstrap";
-import { onMounted } from 'vue';
+import { Collapse } from 'bootstrap'
+import { onMounted } from 'vue'
 
-const router = useRouter();
+const router = useRouter()
 
 onMounted(() => {
   const collapse = new Collapse(document.getElementById('kodaNavBar'), {
     toggle: false
-  });
-  collapse.hide();
-  router.afterEach((to, from) => {
-    collapse.hide();
+  })
+  collapse.hide()
+  router.afterEach(() => {
+    collapse.hide()
   })
 })
 </script>

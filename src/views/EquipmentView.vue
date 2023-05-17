@@ -42,10 +42,10 @@ const categorias = [
     name: 'Patín Eléctrico',
     image: patin
   }
-];
+]
 
-const categoriesWithUrl = categorias.filter((categoria) => categoria.url);
-const categoriesWithNoUrl = categorias.filter((categoria) => !categoria.url);
+const categoriesWithUrl = categorias.filter((categoria) => categoria.url)
+const categoriesWithNoUrl = categorias.filter((categoria) => !categoria.url)
 </script>
 
 <template>
@@ -65,7 +65,7 @@ const categoriesWithNoUrl = categorias.filter((categoria) => !categoria.url);
           :style="{ backgroundImage: 'url(' + categoria.image + ')' }"
         ></div>
       </RouterLink>
-      
+
       <div
         v-for="(categoria, index) in categoriesWithNoUrl"
         :key="index"
