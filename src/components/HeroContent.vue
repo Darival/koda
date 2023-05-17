@@ -1,4 +1,5 @@
 <script setup>
+import hero from '../assets/hero.jpg';
 
 defineProps({
   title: {
@@ -7,16 +8,21 @@ defineProps({
   },
   subtitle: {
     type: String,
-    required: true
+    required: false
+  },
+  image: {
+    type: String,
+    required: false,
+    default: hero
   }
 })
 </script>
 
 <template>
-  <main class="koda-hero">
+  <main class="koda-hero" :style="{ backgroundImage: 'url(' + image + ')' }">
     <div class="hero-body">
       <h1 class="hero-title">{{ title }}</h1>
-      <p class="hero-subtitle">{{ subtitle }}</p>
+      <p v-if="subtitle" class="hero-subtitle">{{ subtitle }}</p>
     </div>
   </main>
 </template>
@@ -25,7 +31,6 @@ defineProps({
 <style scoped>
 .koda-hero {
   background-position: center center;
-  background-image: url("../assets/hero.jpg");
   background-size: cover;
   transform: translate3d(0px, 0px, 0px);
   height: 33rem;
