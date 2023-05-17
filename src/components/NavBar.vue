@@ -1,12 +1,16 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 
 <template>
   <header>
     <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="../assets/logo.png" alt="Koda Lift" class="koda-lift-logo" />
-        </a>
+        <RouterLink :to="{ name: 'home' }">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/logo.png" alt="Koda Lift" class="koda-lift-logo" />
+          </a>
+        </RouterLink>
         <button
           class="navbar-toggler collapsed"
           type="button"

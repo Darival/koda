@@ -43,7 +43,7 @@ defineProps({
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }
 .hero-title {
   font-size: 5rem;
