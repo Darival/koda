@@ -1,5 +1,19 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRouter } from 'vue-router'
+import { Collapse } from "bootstrap";
+import { onMounted } from 'vue';
+
+const router = useRouter();
+
+onMounted(() => {
+  const collapse = new Collapse(document.getElementById('kodaNavBar'), {
+    toggle: false
+  });
+  collapse.hide();
+  router.afterEach((to, from) => {
+    collapse.hide();
+  })
+})
 </script>
 
 <template>
@@ -15,42 +29,33 @@ import { RouterLink } from 'vue-router'
           class="navbar-toggler collapsed"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample01"
-          aria-controls="navbarsExample01"
+          data-bs-target="#kodaNavBar"
+          aria-controls="kodaNavBar"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+        <div class="navbar-collapse collapse" id="kodaNavBar" style="">
           <ul class="navbar-nav me-auto mb-2">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Dropdown</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
+            <RouterLink class="nav-link fs-5" :to="{ name: 'home' }" v-slot="{ isActive }">
+              <li class="nav-item" :class="[isActive && 'active']">Inicio</li>
+            </RouterLink>
+            <RouterLink class="nav-link fs-5" :to="{ name: 'equipment' }" v-slot="{ isActive }">
+              <li class="nav-item" :class="[isActive && 'active']">Equipos</li>
+            </RouterLink>
+            <RouterLink class="nav-link fs-5" :to="{ name: 'about' }" v-slot="{ isActive }">
+              <li class="nav-item" :class="[isActive && 'active']">Quiénes somos</li>
+            </RouterLink>
+
+            <RouterLink
+              class="nav-link fs-5"
+              :to="{ name: 'distribuidores' }"
+              v-slot="{ isActive }"
+            >
+              <li class="nav-item" :class="[isActive && 'active']">Distribuidores</li>
+            </RouterLink>
           </ul>
-          <form role="search">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-          </form>
         </div>
       </div>
     </nav>
@@ -60,5 +65,13 @@ import { RouterLink } from 'vue-router'
 <style scoped>
 .koda-lift-logo {
   height: 2.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.active {
+  color: #1bcc30 !important;
 }
 </style>
