@@ -5,7 +5,6 @@ import { getCategory } from '../store/index.js'
 
 const route = useRoute()
 const category = getCategory(route.params.category)
-console.log(category)
 </script>
 
 <template>

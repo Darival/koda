@@ -30,41 +30,12 @@ import { RouterLink } from 'vue-router'
       <h2>Torreta</h2>
     </div>
   </div>
-  <div class="container fs-5 koda-mission">
-    <p>
+  <div class="container koda-mission">
+    <p class="fs-4 lh-lg">
       El objetivo de <strong>Koda</strong> es proporcionar soluciones de manejo de materiales de
       alta calidad y confiables, al mismo tiempo que se logra un crecimiento y rentabilidad
-      sostenibles.
+      sostenibles con una amplia gama de productos.
     </p>
-
-    <p>Además, algunos otros objetivos específicos que la empresa podría establecer son:</p>
-
-    <ul>
-      <li>
-        Ofrecer una amplia gama de productos y servicios de montacargas para satisfacer las
-        necesidades específicas de cada cliente.
-      </li>
-      <li>
-        Proporcionar un excelente servicio al cliente, incluyendo asesoramiento técnico,
-        mantenimiento y reparación de montacargas.
-      </li>
-      <li>
-        Mantener una relación de confianza y colaboración con clientes, proveedores y empleados para
-        construir una cultura empresarial sostenible y responsable.
-      </li>
-      <li>
-        Implementar prácticas de seguridad y salud en el trabajo que garanticen la protección de los
-        empleados, los clientes y las instalaciones de la empresa.
-      </li>
-      <li>
-        Fomentar la innovación y el desarrollo de nuevas soluciones de manejo de materiales que
-        mejoren la eficiencia y reduzcan el impacto ambiental.
-      </li>
-      <li>
-        Expandir la presencia de la empresa en nuevos mercados y aumentar la participación de
-        mercado en los mercados existentes.
-      </li>
-    </ul>
   </div>
 </template>
 
@@ -86,8 +57,10 @@ import { RouterLink } from 'vue-router'
   margin-top: 1rem;
 }
 
-.koda-mission li {
-  margin-bottom: 1rem;
+.koda-mission {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  border-left: solid 3px #1bcc30;
 }
 
 @media screen and (max-width: 768px) {

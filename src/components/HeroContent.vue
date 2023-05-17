@@ -63,8 +63,6 @@ defineProps({
   font-weight: 500;
 }
 
-
-
 @media screen and (max-width: 769px) {
   .koda-hero {
     height: 50rem;
@@ -74,5 +72,4 @@ defineProps({
     font-weight: 700;
   }
 }
-
 </style>
