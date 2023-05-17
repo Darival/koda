@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <footer class="p-4 text-center border fs-4 fst-italic">
+  <footer class="p-4 text-center fs-4 fst-italic">
     Para información, envía un correo a hola@kodalift.com
   </footer>
 </template>

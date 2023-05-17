@@ -1,0 +1,10 @@
+
+
+.koda-button {
+  background-color: #1bcc30;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}

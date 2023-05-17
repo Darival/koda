@@ -13,7 +13,7 @@ import { RouterLink } from 'vue-router'
   >
     <p class="fs-5">¿Necesitas cotizar un equipo para tu proyecto?</p>
     <RouterLink :to="{ name: 'distribuidores' }">
-      <button type="button" class="koda-action">Programa una llamada</button>
+      <button type="button" class="koda-button">Programa una llamada</button>
     </RouterLink>
   </div>
   <div class="container koda-assets">
@@ -88,14 +88,5 @@ import { RouterLink } from 'vue-router'
 
 .koda-mission li {
   margin-bottom: 1rem;
-}
-
-.koda-action {
-  background-color: #1bcc30;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.25rem;
-  font-weight: 600;
-  cursor: pointer;
 }
 </style>
