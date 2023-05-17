@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router'
 <template>
   <HeroContent
     title="Te quitamos una carga de encima"
-    subtitle="El mejor servicio. Los mejores equipos."
+    subtitle="El mejor soporte. Los mejores equipos."
   />
   <div
     class="action-call container d-flex flex-column justify-content-center align-items-center my-5"
@@ -88,5 +88,11 @@ import { RouterLink } from 'vue-router'
 
 .koda-mission li {
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .koda-assets {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
