@@ -10,6 +10,7 @@ import heroImage from '../assets/dist.jpg'
       <div class="distribuidor">
         <img src="../assets/rd-logo.png" alt="" />
         <p class="fs-5 text-center fst-italic">
+          <span>81-2261-5606</span><br/>
           Estamos en la Av. Central 230 Int. Bodega 127, Col. Los Lermas, Guadalupe; Nuevo León
         </p>
         <iframe
